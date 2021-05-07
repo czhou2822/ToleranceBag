@@ -1,0 +1,30 @@
+.navbar{
+	background-color: #325896;
+	height: 50px;
+    width: 100%;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li .nav-image {
+  opacity: 50%;
+  width: 50px;
+}
+
+li .nav-image:hover {
+  opacity: 100%;
+  width: 50px;
+}
+
+
