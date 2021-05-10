@@ -1,19 +1,23 @@
 .navbar{
-	background-color: #325896;
-	height: 50px;
+	background-color: #687192;
+	height: 100px;
     width: 100%;
+}
 
+.navbar-title{
+	display:block; 
+	float:left; 
+	font-size: 15;
 }
 
 
-ul {
+ul.navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
 }
 
-li {
+li.navbar-list-item {
   float: left;
 }
 
@@ -27,4 +31,28 @@ li .nav-image:hover {
   width: 50px;
 }
 
+ul.table-of-content{
+  background-color: #257604;
+  display: flex;
+  align-items: center;
+}
 
+#puzzle-container {
+  width: 400px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: auto;
+  resize: both;
+  position: relative;
+  z-index: 2;
+}
+
+iframe {
+    width: 320px;
+    height: 320px;
+    border: 0;
+    transform: scale(0.9);
+    overflow: hidden;
+    transform-origin: 0 0;
+
+}

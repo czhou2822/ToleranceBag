@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tolerance Bag</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    </style>
+
+  </head>
+<body>
+  <header>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-list-item"><a href="../index.html"><img src="../assets/HomeButton.png" class="nav-image"></a></li>
+        <li class="navbar-list-item"><a href="/SlidingPuzzleGame/slidingPuzzle_christianity.html"><img src="../assets/TableofContentsButton.png" class="nav-image"></a></li>
+      </ul> 
+      <br/>
+    </div>
+
+  </header>
+
+  <div class="container">
+    <p>Table Of Content:</p>
+    <button type="button" class="collapsible">Origin</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button type="button" class="collapsible">Symbols</button>
+    <div class="content">
+      <a href="Puzzles/buddhism.html">
+      <p>Buddhism</p>
+      </a>
+      <a href="Puzzles/christianity.html">
+      <p>Christianity</p>
+      </a>
+      <a href="Puzzles/hinduism.html">
+      <p>Hinduism</p>
+      </a>
+      <a href="Puzzles/islam.html">
+      <p>Islam</p>
+      </a>
+      <a href="Puzzles/judaism.html">
+      <p>Judaism</p>
+      </a>
+    </div>
+    <button type="button" class="collapsible">Temples</button>
+    <div class="content">
+      <a href="SlidingPuzzleGame/slidingPuzzle_christianity.html">
+      <p>Christianity</p>
+      </a>
+      <a href="SlidingPuzzleGame/slidingPuzzle_buddhism.html">
+      <p>Buddhism</p>
+      </a>
+      <a href="SlidingPuzzleGame/slidingPuzzle_hinduism.html">
+      <p>Hinduism</p>
+      </a>
+      <a href="SlidingPuzzleGame/slidingPuzzle_islam.html">
+      <p>Islam</p>
+      </a>
+      <a href="SlidingPuzzleGame/slidingPuzzle_judaism.html">
+      <p>Judaism</p>
+      </a>
+  </div>
+
+<center>
+  <div>
+      <a  href="index.html">Previous</a>
+      <a  href="SlidingPuzzleGame/slidingPuzzle_christianity.html">Next</a>
+  </div>
+</center>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body> 
+</html>
